@@ -1,0 +1,33 @@
+# Ignorez node_modules en CUALQUIER subcarpeta (sin barra inicial = aplica a todos los niveles)
+node_modules/
+
+# Compilado
+dist/
+tmp/
+out-tsc/
+bazel-out/
+
+# Cache de Angular
+.angular/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Bases de datos SQLite generadas
+*.db
+*.db-journal
+
+# Cobertura de tests
+coverage/
