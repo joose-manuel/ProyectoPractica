@@ -1,0 +1,126 @@
+====================================================================
+ REGLAS SEO — PARA QUE TU PORTAFOLIO SALGA DE PRIMERO EN GOOGLE
+ Autor: Jose Manuel Hernandez Donado
+ Plataforma de hosting: Vercel
+====================================================================
+
+IMPORTANTE: El dominio (por ejemplo .us.kg de FreeDomain) NO te
+posiciona. Lo que te rankea es el SEO técnico + contenido + autoridad.
+Sigue estas reglas en orden de prioridad.
+
+--------------------------------------------------------------------
+PARTE 1 - SEO TECNICO (lo que esta en TU codigo)
+--------------------------------------------------------------------
+
+1. TITULO UNICO por pagina (etiqueta <title>) con tu nombre y cargo.
+   Ej: "Jose Manuel Hernandez Donado | Desarrollador Frontend"
+   Maximo ~60 caracteres. Es lo mas importante para el click.
+
+2. META DESCRIPTION unica por pagina (130-160 caracteres) que resuma
+   lo que ofreces y invite a entrar.
+   Ej: "Portafolio de Jose Manuel Hernandez Donado: proyectos web,
+   desarrollo frontend, diseño UI/UX y más. Contáctame."
+
+3. UNA SOLA etiqueta <h1> por pagina con tu nombre o tu frase clave.
+
+4. JERARQUIA correcta: usa h2, h3, h4 de forma ordenada (nunca saltar
+   de h1 a h4 sin pasar por h2/h3).
+
+5. TEXTO REAL Y SUSTANCIOSO: No uses solo imagenes. Escribe parrafos
+   reales sobre tus proyectos, experiencia y habilidades. Google indexa
+   texto, no imagenes.
+
+6. PALABRAS CLAVE naturales: integra tus terminos de forma natural,
+   ej: "portafolio de desarrollador web", "diseño UI/UX", "proyectos
+   frontend". NO hagas keyword stuffing (repetir sin sentido).
+
+7. VELOCIDAD DE CARGA (pesa mucho):
+   - Imagenes en WebP, comprimidas, con width/height definidos.
+   - Minifica CSS y JS.
+   - Usa lazy loading en imagenes.
+
+8. MOBILE-FIRST: Google indexa primero la version movil. Tu web DEBE
+   verse perfecta en telefono (375px). Pruebala ahi.
+
+9. HTTPS: ya lo tienes gratis en Vercel (no hagas nada).
+
+10. SITEMAP.XML: crea un archivo sitemap.xml con todas tus URLs y
+    registralo en Google Search Console.
+
+11. ROBOTS.TXT: crea este archivo permitiendo el rastreo de Google.
+    Ej:
+      User-agent: *
+      Allow: /
+      Sitemap: https://tu-dominio.com/sitemap.xml
+
+12. DATOS ESTRUCTURADOS (schema.org): agrega el marcado "Person" en el
+    <head> con tu nombre real, cargo, imagen, redes sociales. Asi
+    Google entiende exactamente quien eres.
+    Ej de estructura:
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jose Manuel Hernandez Donado",
+        "jobTitle": "Desarrollador Frontend",
+        "url": "https://tu-dominio.com",
+        "sameAs": ["https://linkedin.com/in/tu-perfil",
+                    "https://github.com/tu-usuario"]
+      }
+      </script>
+
+13. URLs LIMPIAS y descriptivas (no con codigos). Ej: /proyectos/nota
+    en vez de /?id=123.
+
+--------------------------------------------------------------------
+PARTE 2 - AUTORIDAD (lo que mas pesa en el ranking)
+--------------------------------------------------------------------
+
+14. GOOGLE SEARCH CONSOLE:
+    - Crea cuenta en https://search.google.com/search-console
+    - Verifica tu dominio (en Vercel: Sube el archivo de verificacion
+      a /public o usa el metodo HTML tag).
+    - Envia tu sitemap.xml en la seccion "Sitemaps".
+    - Pide la indexacion manual con "Inspeccionar URL" -> "Solicitar
+      indexacion".
+    - OJO: Algunos dominios gratis (.us.kg) dan problemas de spam en GSC.
+      Si falla, verifica con el metodo de ARCHIVO en Vercel.
+
+15. PERFILES ENLAZADOS (EEAT): Enlaza tu portafolio desde tu LinkedIn,
+    GitHub, Behance, y pon en tu portafolio enlaces a ellos.
+
+16. SOBRE MI: Seccion "Sobre mi" con tu nombre real completo, foto,
+    experiencia y formacion. Google confia mas en personas reales.
+
+17. BACKLINKS: Consigue que tu portafolio sea enlazado desde otros
+    sitios: bio de redes, directorios de freelancers (Upwork, Freelancer),
+    sitios de empleo, comunidades.
+
+18. CONTENIDO FRESCO: Publica/actualiza proyectos y descripciones
+    regularmente. Google premia el rastreo constante.
+
+19. NO COMPRES dominios ni "SEO de dominio". Es dinero tirado. Invierte
+    en contenido y autoridad (pasos anteriores).
+
+--------------------------------------------------------------------
+PARTE 3 - COSAS QUE EVITAR
+--------------------------------------------------------------------
+
+- NO encierres tu contenido solo en imagenes o videos (no se indexa).
+- NO uses texto oculto ni keywords invisibles (penalizacion).
+- NO copies contenido de otros sitios (plagio = mal posicionado).
+- NO uses popups que bloqueen el contenido en movil.
+- NO tardes mas de ~3 segundos en cargar (abandona y penaliza).
+
+--------------------------------------------------------------------
+RESUMEN RAPIDO - PRIORIDAD MAXIMA
+--------------------------------------------------------------------
+1. Title + meta description unicos.
+2. Texto real y bien escrito en cada seccion.
+3. sitemap.xml + robots.txt.
+4. Schema.org Person.
+5. Google Search Console + solicitar indexacion.
+6. Enlaces desde LinkedIn/GitHub.
+
+El dominio apenas influye. Tu tiempo va a contenido y autoridad.
+====================================================================
