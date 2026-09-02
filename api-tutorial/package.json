@@ -1,0 +1,10 @@
+{
+  "name": "api-basica",
+  "version": "1.0.0",
+  "description": "Curso de APIs con Node.js nativo, sin frameworks",
+  "main": "01-servidor-basico.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node 01-servidor-basico.js"
+  }
+}
